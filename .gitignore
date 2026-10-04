@@ -1,0 +1,7 @@
+# DICES-350 is downloaded on first use; see README for its license.
+data/diverse_safety_adversarial_dialog_350.csv
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+.DS_Store
