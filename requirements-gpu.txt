@@ -1,0 +1,5 @@
+# Additional dependencies for re-scoring guards (scripts/score_guards.py).
+-r requirements.txt
+torch>=2.1
+transformers>=4.56
+accelerate>=0.33

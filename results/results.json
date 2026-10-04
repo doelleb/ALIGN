@@ -1,0 +1,335 @@
+{
+ "seed": 20260717,
+ "n_boot": 2000,
+ "dataset": {
+  "n_items": 350,
+  "n_ratings": 43050,
+  "raters_per_group": {
+   "Asian": 26,
+   "Black": 29,
+   "Latine": 22,
+   "Multiracial": 16,
+   "White": 30
+  },
+  "group_unsafe_rate": {
+   "Asian": 0.366,
+   "Black": 0.294,
+   "Latine": 0.355,
+   "Multiracial": 0.382,
+   "White": 0.274
+  },
+  "pooled_unsafe_rate": 0.327,
+  "n_contested": 77,
+  "n_scored": {
+   "LG3-1B": 350,
+   "SG-2B": 350,
+   "SG-9B": 350,
+   "WildGuard": 349
+  },
+  "unparseable_items": {
+   "LG3-1B": [],
+   "SG-2B": [],
+   "SG-9B": [],
+   "WildGuard": [
+    154
+   ]
+  }
+ },
+ "feasibility": {
+  "max_pairwise_delta": 0.131,
+  "max_pair": [
+   "Multiracial",
+   "White"
+  ],
+  "prop1_bound": 0.934,
+  "n_patterns": 19,
+  "egalitarian_min_agreement": 0.934,
+  "utilitarian_mean": 0.939,
+  "utilitarian_gap": 0.034,
+  "equal_constrained_mean": 0.934,
+  "cost_of_equality": 0.005,
+  "coverage_frontier": {
+   "1.00": 0.934,
+   "0.95": 0.952,
+   "0.90": 0.968,
+   "0.85": 0.982,
+   "0.80": 0.995,
+   "0.78": 1.0
+  }
+ },
+ "guards": {
+  "LG3-1B": {
+   "threshold": 0.014063626567881557,
+   "auc": {
+    "Asian": 0.705,
+    "Black": 0.675,
+    "Latine": 0.723,
+    "Multiracial": 0.692,
+    "White": 0.716
+   },
+   "kappa": {
+    "Asian": 0.249,
+    "Black": 0.23,
+    "Latine": 0.306,
+    "Multiracial": 0.261,
+    "White": 0.194
+   },
+   "auc_contested": {
+    "Asian": 0.535,
+    "Black": 0.456,
+    "Latine": 0.625,
+    "Multiracial": 0.504,
+    "White": 0.493
+   },
+   "auc_gap_full": 0.048,
+   "kappa_gap_full": 0.112,
+   "auc_gap_contested": 0.169,
+   "kappa_gap_contested": 0.252,
+   "best_tracked_group": "Latine",
+   "conf_entropy_rho": -0.2,
+   "conf_entropy_p": 0.00016198943409729747,
+   "auc_gap_full_ci95": [
+    0.029,
+    0.118
+   ],
+   "kappa_gap_full_ci95": [
+    0.062,
+    0.217
+   ],
+   "auc_gap_contested_ci95": [
+    0.109,
+    0.514
+   ],
+   "kappa_gap_contested_ci95": [
+    0.147,
+    0.516
+   ],
+   "pooled_auc": 0.716,
+   "worst_group_auc": 0.675,
+   "overstatement": 0.041,
+   "agreement_by_tercile": {
+    "low": 0.798,
+    "medium": 0.748,
+    "high": 0.557
+   },
+   "auc_gap_full_unsure_unsafe": 0.039
+  },
+  "SG-2B": {
+   "threshold": 0.00970458984375,
+   "auc": {
+    "Asian": 0.692,
+    "Black": 0.737,
+    "Latine": 0.698,
+    "Multiracial": 0.661,
+    "White": 0.772
+   },
+   "kappa": {
+    "Asian": 0.26,
+    "Black": 0.272,
+    "Latine": 0.275,
+    "Multiracial": 0.217,
+    "White": 0.243
+   },
+   "auc_contested": {
+    "Asian": 0.549,
+    "Black": 0.64,
+    "Latine": 0.603,
+    "Multiracial": 0.464,
+    "White": 0.406
+   },
+   "auc_gap_full": 0.111,
+   "kappa_gap_full": 0.058,
+   "auc_gap_contested": 0.234,
+   "kappa_gap_contested": 0.221,
+   "best_tracked_group": "White",
+   "conf_entropy_rho": -0.073,
+   "conf_entropy_p": 0.17556519342954138,
+   "auc_gap_full_ci95": [
+    0.053,
+    0.185
+   ],
+   "kappa_gap_full_ci95": [
+    0.034,
+    0.148
+   ],
+   "auc_gap_contested_ci95": [
+    0.108,
+    0.524
+   ],
+   "kappa_gap_contested_ci95": [
+    0.127,
+    0.548
+   ],
+   "pooled_auc": 0.717,
+   "worst_group_auc": 0.661,
+   "overstatement": 0.056,
+   "agreement_by_tercile": {
+    "low": 0.758,
+    "medium": 0.802,
+    "high": 0.548
+   },
+   "auc_gap_full_unsure_unsafe": 0.105
+  },
+  "SG-9B": {
+   "threshold": 0.2021484375,
+   "auc": {
+    "Asian": 0.637,
+    "Black": 0.709,
+    "Latine": 0.668,
+    "Multiracial": 0.639,
+    "White": 0.775
+   },
+   "kappa": {
+    "Asian": 0.187,
+    "Black": 0.225,
+    "Latine": 0.23,
+    "Multiracial": 0.213,
+    "White": 0.21
+   },
+   "auc_contested": {
+    "Asian": 0.545,
+    "Black": 0.698,
+    "Latine": 0.689,
+    "Multiracial": 0.549,
+    "White": 0.673
+   },
+   "auc_gap_full": 0.138,
+   "kappa_gap_full": 0.043,
+   "auc_gap_contested": 0.152,
+   "kappa_gap_contested": 0.156,
+   "best_tracked_group": "White",
+   "conf_entropy_rho": 0.124,
+   "conf_entropy_p": 0.020072568495787788,
+   "auc_gap_full_ci95": [
+    0.079,
+    0.229
+   ],
+   "kappa_gap_full_ci95": [
+    0.027,
+    0.133
+   ],
+   "auc_gap_contested_ci95": [
+    0.102,
+    0.41
+   ],
+   "kappa_gap_contested_ci95": [
+    0.122,
+    0.529
+   ],
+   "pooled_auc": 0.681,
+   "worst_group_auc": 0.637,
+   "overstatement": 0.044,
+   "agreement_by_tercile": {
+    "low": 0.71,
+    "medium": 0.757,
+    "high": 0.565
+   },
+   "auc_gap_full_unsure_unsafe": 0.166
+  },
+  "WildGuard": {
+   "threshold": 0.00237016133519061,
+   "auc": {
+    "Asian": 0.778,
+    "Black": 0.785,
+    "Latine": 0.81,
+    "Multiracial": 0.786,
+    "White": 0.794
+   },
+   "kappa": {
+    "Asian": 0.294,
+    "Black": 0.291,
+    "Latine": 0.338,
+    "Multiracial": 0.321,
+    "White": 0.243
+   },
+   "auc_contested": {
+    "Asian": 0.555,
+    "Black": 0.554,
+    "Latine": 0.696,
+    "Multiracial": 0.568,
+    "White": 0.575
+   },
+   "auc_gap_full": 0.032,
+   "kappa_gap_full": 0.094,
+   "auc_gap_contested": 0.142,
+   "kappa_gap_contested": 0.173,
+   "best_tracked_group": "Latine",
+   "conf_entropy_rho": -0.44,
+   "conf_entropy_p": 5.550851225940675e-18,
+   "auc_gap_full_ci95": [
+    0.021,
+    0.083
+   ],
+   "kappa_gap_full_ci95": [
+    0.049,
+    0.198
+   ],
+   "auc_gap_contested_ci95": [
+    0.099,
+    0.41
+   ],
+   "kappa_gap_contested_ci95": [
+    0.106,
+    0.48
+   ],
+   "pooled_auc": 0.804,
+   "worst_group_auc": 0.778,
+   "overstatement": 0.026,
+   "agreement_by_tercile": {
+    "low": 0.935,
+    "medium": 0.718,
+    "high": 0.53
+   },
+   "auc_gap_full_unsure_unsafe": 0.031
+  }
+ },
+ "human_pooled_auc": {
+  "Asian": 0.987,
+  "Black": 0.987,
+  "Latine": 0.989,
+  "Multiracial": 0.97,
+  "White": 0.991
+ },
+ "kendall_tau": {
+  "LG3-1B / SG-2B": {
+   "tau": 0.2,
+   "p": 0.817
+  },
+  "LG3-1B / SG-9B": {
+   "tau": 0.0,
+   "p": 1.0
+  },
+  "LG3-1B / WildGuard": {
+   "tau": 0.6,
+   "p": 0.233
+  },
+  "SG-2B / SG-9B": {
+   "tau": 0.8,
+   "p": 0.083
+  },
+  "SG-2B / WildGuard": {
+   "tau": 0.2,
+   "p": 0.817
+  },
+  "SG-9B / WildGuard": {
+   "tau": 0.4,
+   "p": 0.483
+  }
+ },
+ "reversal_test": {
+  "guards": [
+   "SG-2B",
+   "LG3-1B"
+  ],
+  "groups": [
+   "Black",
+   "White"
+  ],
+  "subset": "contested",
+  "did": 0.27,
+  "ci95": [
+   -0.221,
+   0.826
+  ]
+ }
+}
